@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 
-from mos6502 import MOS6502
+from mos6502 import MOS6502MPU
 
 def main():
-    mpu = mos6502.MOS6502()
+    mpu = MOS6502MPU()
+
+    mpu.reset()
+
 
 
 if __name__ == "__main__":
